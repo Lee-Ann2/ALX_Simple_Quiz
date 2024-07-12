@@ -7,7 +7,7 @@ function checkAnswer() {
     const selectedRadioButton =
     document.querySelector(`input[type="radio"][name = "quiz"]:checked`);
     const userAnswer = selectedRadioButton.value;
-    if(userAnswer === correctAnswer) {
+    if (userAnswer === correctAnswer) {
         const userAnswer = document.querySelector('#feedback');
         userAnswer.textContent = "Correct! Well done.";
     } else {
